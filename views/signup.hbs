@@ -1,0 +1,15 @@
+{{#if success}}
+<h3>sign-up successful
+{{/if}}
+
+<form name="signup" method="post" action="">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="email" placeholder="email">
+    <input type="text" name="password" placeholder="pass">
+    <input type="text" name="confirm" placeholder="confirm">
+    <input type="submit"/>
+</form>
+
+<ul>
+{{#each users}}<li>{{name}} - {{email}} - {{password}}</li>{{/each}}
+</ul>
